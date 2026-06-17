@@ -1112,7 +1112,7 @@ button, input, textarea, select {
                 <!-- Formulario de Contacto Derecha -->
                 <div class="contact-form-panel reveal">
                     <h3 style="margin-bottom: 1.5rem; font-family: var(--font-heading); color: var(--color-primary);">Envíanos un Mensaje</h3>
-                    <form action="#" method="POST" id="contact-form" onsubmit="event.preventDefault(); alert('Gracias por contactarnos. Tu mensaje ha sido enviado exitosamente. Nos comunicaremos contigo a la brevedad.'); this.reset();">
+                    <form action="#" method="POST" id="contact-form">
                         
                         <div class="form-row">
                             <div class="form-group">
@@ -1222,7 +1222,7 @@ button, input, textarea, select {
                 <h3>Líneas de Acción</h3>
                 <ul class="footer-links">
                     <li><a href="lineas-accion.html" class="footer-link-item">Construcción e Infraestructura</a></li>
-                    <li><a href="lineas-accion.html" class="footer-link-item">Inclusión Social y Discapacidad</a></li>
+                    <li><a href="lineas-accion.html" class="footer-link-item">Inclusión social y enfoque diferencial hacia la diversidad funcional (discapacidad)</a></li>
                     <li><a href="lineas-accion.html" class="footer-link-item">Turismo Sostenible y Cultural</a></li>
                     <li><a href="lineas-accion.html" class="footer-link-item">Educación y Fortalecimiento</a></li>
                 </ul>
@@ -1366,6 +1366,69 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Intervalo de 5 segundos
         setInterval(nextSlide, 5000);
+    }
+
+    // 6. Integración del Formulario con Google Sheets (Google Apps Script)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxpRjcQ5Wl66YeVbqUSB8_dBRZny7ew-fypjwjwuIgtQk-hpsqu5g-DATWX4jQdKtT0Ow/exec'; 
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnHTML = submitBtn.innerHTML;
+            
+            // Cambiar a estado de carga
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 0.5rem;"></i> Enviando...';
+            
+            // Recopilar los datos del formulario
+            const formData = new FormData(contactForm);
+            
+            // Validación de URL de prueba
+            if (scriptURL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL' || scriptURL === '') {
+                alert('¡Modo de prueba activo!\n\nPara enviar datos reales a Google Sheets y recibir notificaciones por correo, debes configurar la URL de tu Google Apps Script en el archivo contacto.html.\n\nDatos capturados:\n' + JSON.stringify(Object.fromEntries(formData.entries()), null, 2));
+                
+                // Restablecer interfaz
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+                contactForm.reset();
+                return;
+            }
+            
+            // Enviar la petición POST
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error de conexión o respuesta no exitosa del servidor.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'SUCCESS') {
+                    alert('¡Mensaje enviado con éxito!\n\nTu consulta ha sido registrada y se ha enviado una notificación al equipo. Nos comunicaremos contigo lo antes posible.');
+                    contactForm.reset();
+                } else {
+                    throw new Error(data.message || 'Error desconocido al procesar el mensaje.');
+                }
+            })
+            .catch(error => {
+                console.error('Error al enviar el formulario:', error);
+                alert('Hubo un inconveniente al enviar tu mensaje:\n' + error.message + '\n\nPor favor, intenta de nuevo o escríbenos directamente a: vitraprojectscartago@gmail.com');
+            })
+            .finally(() => {
+                // Restablecer el botón de envío
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+            });
+        });
     }
 });
 
