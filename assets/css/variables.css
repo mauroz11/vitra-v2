@@ -1,0 +1,73 @@
+/* Variables globales de diseño e identidad de la Fundación Vitra */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Tipografía */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Colores del Logo oficial de la Fundación Vitra (Terracota y Ámbar) */
+    --color-primary: #b84e26;        /* Terracota / Ladrillo */
+    --color-primary-rgb: 184, 78, 38;
+    --color-primary-light: #d66438;
+    --color-primary-dark: #8c3817;
+
+    --color-secondary: #eea41f;      /* Ámbar / Amarillo cálido */
+    --color-secondary-rgb: 238, 164, 31;
+    --color-secondary-light: #f5b94f;
+    --color-secondary-dark: #b87c10;
+
+    /* Fondos y Textos */
+    --color-bg-main: #faf8f5;        /* Alabastro / Off-white cálido */
+    --color-bg-alt: #f4efea;         /* Crema suave para alternancia */
+    --color-bg-card: #ffffff;        /* Blanco puro para tarjetas */
+    
+    --color-text-main: #2b2d2f;      /* Slate oscuro para legibilidad */
+    --color-text-muted: #5e6266;     /* Gris para subtítulos y textos secundarios */
+    --color-text-light: #ffffff;     /* Texto sobre fondos oscuros */
+    
+    /* Colores Estratégicos de Apoyo */
+    --color-green: #2e7d32;          /* Verde para Medio Ambiente y Sostenibilidad */
+    --color-green-light: #e8f5e9;
+    --color-blue: #1565c0;           /* Azul para Inclusión Social y Cooperación */
+    --color-blue-light: #e3f2fd;
+    --color-error: #c62828;
+    --color-success: #2e7d32;
+
+    /* Sombras (Box Shadows) */
+    --shadow-sm: 0 2px 4px rgba(43, 45, 47, 0.05);
+    --shadow-md: 0 4px 12px rgba(43, 45, 47, 0.08);
+    --shadow-lg: 0 10px 25px rgba(43, 45, 47, 0.12);
+    --shadow-hover: 0 15px 35px rgba(184, 78, 38, 0.15);
+
+    /* Radios y Espaciados */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+
+    /* Transiciones */
+    --transition-fast: all 0.2s ease;
+    --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s ease;
+
+    /* Layout Constraints */
+    --max-width: 1200px;
+    --header-height: 80px;
+}
+
+/* Modo Oscuro (Opcional - Estética y Accesibilidad) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-main: #141517;
+        --color-bg-alt: #1a1c1e;
+        --color-bg-card: #202225;
+        
+        --color-text-main: #f0f2f5;
+        --color-text-muted: #a0a5ad;
+        
+        --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+}
