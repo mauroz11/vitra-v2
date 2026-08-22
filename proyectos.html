@@ -1,71 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyectos destacados de la Fundación Vitra. Casos de éxito en construcción social, inclusión y rutas patrimoniales.">
-    <title>Proyectos | Fundación Vitra - Experiencia en Territorio</title>
+    <meta name="description" content="Galería de proyectos y obras de la Fundación VITRA. Vivienda de interés social, infraestructura en más de 15 instituciones educativas, microcrédito y desarrollo comunitario.">
+    <meta name="keywords" content="Proyectos Fundación Vitra, Urbanización Los Ángeles Cartago, El Divino Niño, Colegios Valle del Cauca, Microcréditos, Monseñor Jairo Uribe">
+    <title>Proyectos y Obras | Fundación VITRA - Experiencia en Territorio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --color-primary: #b84e26;
-            --color-primary-dark: #8c3817;
-            --color-secondary: #eea41f;
-            --color-bg-main: #faf8f5;
-            --color-bg-card: #ffffff;
-            --color-bg-alt: #f4efea;
-            --color-text-main: #2b2d2f;
-            --color-text-muted: #5e6266;
-            --color-text-light: #ffffff;
-            --radius-md: 12px;
-            --shadow-md: 0 4px 12px rgba(43, 45, 47, 0.08);
-            --shadow-lg: 0 10px 25px rgba(43, 45, 47, 0.12);
-            --max-width: 1200px;
-            --header-height: 80px;
-        }
-        body { font-family: Inter, Montserrat, Arial, sans-serif; color: var(--color-text-main); background: var(--color-bg-main); line-height: 1.6; overflow-x: hidden; }
-        a { color: inherit; text-decoration: none; }
-        img { max-width: 100%; display: block; }
-        ul { list-style: none; }
-        .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
-        .header { background: var(--color-bg-card); box-shadow: var(--shadow-md); position: sticky; top: 0; z-index: 10; }
-        .navbar { min-height: var(--header-height); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-        .logo-container { display: flex; align-items: center; gap: .8rem; }
-        .logo-img { width: 56px; height: 56px; object-fit: contain; }
-        .logo-text { color: var(--color-primary); font-size: 1.45rem; font-weight: 800; }
-        .logo-sub { color: var(--color-text-muted); font-size: .8rem; font-weight: 700; text-transform: uppercase; }
-        .nav-toggle { display: none; }
-        .nav-menu { display: flex; align-items: center; gap: 2rem; font-weight: 700; }
-        .nav-link { position: relative; padding: .5rem 0; }
-        .nav-link.active, .nav-link:hover { color: var(--color-primary); }
-        .nav-link.active::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background: var(--color-primary); border-radius: 999px; }
-        .section, .section-alt { padding: 5rem 0; }
-        .section-alt { background: var(--color-bg-alt); }
-        .section-title { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
-        .section-subtitle { color: var(--color-text-muted); max-width: 760px; margin: 0 auto 2.5rem; }
-        .text-center { text-align: center; }
-        .btn, .filter-btn { display: inline-flex; align-items: center; justify-content: center; padding: .8rem 1.5rem; border: 2px solid var(--color-primary); border-radius: var(--radius-md); font-weight: 800; color: var(--color-primary); background: transparent; cursor: pointer; }
-        .btn-primary, .filter-btn.active { background: var(--color-primary); color: var(--color-text-light); }
-        .filter-controls { display: flex; justify-content: center; flex-wrap: wrap; gap: .75rem; margin: 2rem 0 3rem; }
-        .projects-grid, .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
-        .project-card, .card { background: var(--color-bg-card); border-radius: var(--radius-md); box-shadow: var(--shadow-md); overflow: hidden; display: flex; flex-direction: column; }
-        .project-img { width: 100%; height: 230px; object-fit: cover; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); }
-        .project-content, .card { padding: 1.5rem; }
-        .project-title, .card-title { color: var(--color-primary-dark); font-size: 1.35rem; margin-bottom: .7rem; }
-        .project-desc, .card-desc { color: var(--color-text-muted); }
-        .footer { background: #202225; color: var(--color-text-light); padding: 4rem 0 1.5rem; }
-        .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 2rem; }
-        .footer a { color: rgba(255,255,255,.85); }
-        .reveal { opacity: 1; transform: none; }
-        @media (max-width: 900px) {
-            .nav-toggle { display: inline-flex; padding: .45rem .7rem; border: 1px solid rgba(0,0,0,.18); border-radius: 8px; background: white; }
-            .nav-menu { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: white; padding: 1rem 1.5rem; box-shadow: var(--shadow-md); }
-            .nav-menu.active { display: flex; }
-            .projects-grid, .grid-3, .footer-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-    <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -90,106 +31,852 @@
     </header>
 
     <!-- Banner Superior -->
-    <section class="section" style="background-image: linear-gradient(rgba(238, 164, 31, 0.85), rgba(184, 78, 38, 0.95)), url('./assets/images/hero-bg.png'); background-size: cover; background-position: center; color: var(--color-text-light); padding: 4rem 0; text-align: center;">
+    <section class="section" style="background-image: linear-gradient(rgba(238, 164, 31, 0.88), rgba(184, 78, 38, 0.95)), url('./assets/images/hero-bg.png'); background-size: cover; background-position: center; color: var(--color-text-light); padding: 4.5rem 0; text-align: center;">
         <div class="container reveal">
-            <h1 style="font-size: 2.75rem; margin-bottom: 0.5rem;">Nuestros Proyectos</h1>
-            <p style="font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">Evidencias de impacto real y gestión técnica eficiente en el territorio.</p>
+            <span class="hero-tagline" style="color: #ffffff; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase;">Experiencia y Resultados</span>
+            <h1 style="font-size: clamp(2.2rem, 4vw, 3rem); margin-bottom: 0.75rem;">Nuestros Proyectos y Obras</h1>
+            <p style="font-size: 1.15rem; opacity: 0.95; max-width: 700px; margin: 0 auto;">Evidencias de impacto real: más de tres décadas ejecutando vivienda de interés social, infraestructura educativa, microcrédito y desarrollo comunitario en Colombia.</p>
         </div>
     </section>
 
-    <!-- Galería de Proyectos con Filtro -->
+    <!-- Galería de Proyectos con Filtro y Lightbox -->
     <section class="section">
         <div class="container">
+            
             <!-- Botones de Filtro -->
             <div class="filter-container reveal">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="construccion">Construcción</button>
-                <button class="filter-btn" data-filter="turismo">Turismo Sostenible</button>
-                <button class="filter-btn" data-filter="inclusion">Inclusión Social</button>
-                <button class="filter-btn" data-filter="sostenibilidad">Sostenibilidad</button>
+                <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> Todos <span class="filter-count">0</span></button>
+                <button class="filter-btn" data-filter="vivienda"><i class="fas fa-home"></i> Vivienda y Hábitat <span class="filter-count">0</span></button>
+                <button class="filter-btn" data-filter="educacion"><i class="fas fa-school"></i> Infraestructura Educativa <span class="filter-count">0</span></button>
+                <button class="filter-btn" data-filter="emprendimiento"><i class="fas fa-hand-holding-usd"></i> Microcrédito y Empleo <span class="filter-count">0</span></button>
+                <button class="filter-btn" data-filter="comunitario"><i class="fas fa-users"></i> Desarrollo Comunitario <span class="filter-count">0</span></button>
+                <button class="filter-btn" data-filter="inclusion"><i class="fas fa-sign-language"></i> Inclusión Social <span class="filter-count">0</span></button>
+                <button class="filter-btn" data-filter="turismo-ambiente"><i class="fas fa-leaf"></i> Turismo y Ambiente <span class="filter-count">0</span></button>
             </div>
 
             <!-- Grid de Tarjetas de Proyectos -->
             <div class="projects-grid reveal">
-                
-                <!-- Proyecto 1: Construcción -->
-                <div class="project-card" data-category="construccion">
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
                     <div class="project-img-container">
-                        <img src="./assets/images/project-construccion.png" alt="Complejo Comunitario Inclusivo" class="project-img">
-                        <span class="project-badge">Construcción</span>
+                        <img src="./assets/images/galeria/urbanizacion-los-angeles-i-y-ii-etapa-cartago-v-(1).jpeg" alt="Urbanización Los Ángeles I y II Etapa (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">Complejo Comunitario Accesible</h3>
-                        <p class="project-desc">Diseño y desarrollo de un centro multipropósito en Cartago, Valle. Utiliza mampostería tradicional en terracota y cuenta con accesibilidad física universal completa (rampas, texturas podotáctiles).</p>
+                        <h3 class="project-title">Urbanización Los Ángeles I y II Etapa (Foto 1)</h3>
+                        <p class="project-desc">Proyecto emblemático de vivienda de interés social por su impacto territorial y número de soluciones habitacionales construidas en Cartago.</p>
                         <div class="project-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle</span>
-                            <span><i class="fas fa-users"></i> 250 Familias</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Proyecto 2: Turismo -->
-                <div class="project-card" data-category="turismo">
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
                     <div class="project-img-container">
-                        <img src="./assets/images/project-turismo.png" alt="Ruta Biocultural Río La Vieja" class="project-img">
+                        <img src="./assets/images/galeria/urbanizacion-los-angeles-i-y-ii-etapa-cartago-v-(2).jpeg" alt="Urbanización Los Ángeles I y II Etapa (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización Los Ángeles I y II Etapa (Foto 2)</h3>
+                        <p class="project-desc">Desarrollo urbano planificado con mampostería resistente, servicios públicos y espacios de convivencia comunitaria.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-los-angeles-i-y-ii-etapa-cartago-v-(3).jpeg" alt="Urbanización Los Ángeles I y II Etapa (Foto 3)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización Los Ángeles I y II Etapa (Foto 3)</h3>
+                        <p class="project-desc">Construcción integral de hábitat y trazado urbanístico que fortaleció el tejido barrial en el municipio de Cartago.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-los-angeles-i-y-ii-etapa-cartago-v-(4).jpeg" alt="Urbanización Los Ángeles I y II Etapa (Foto 4)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización Los Ángeles I y II Etapa (Foto 4)</h3>
+                        <p class="project-desc">Viviendas seguras y confortables entregadas a familias beneficiarias de programas sociales de la Fundación VITRA.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-los-angeles-i-y-ii-etapa-cartago-v-(5).jpeg" alt="Urbanización Los Ángeles I y II Etapa (Foto 5)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización Los Ángeles I y II Etapa (Foto 5)</h3>
+                        <p class="project-desc">Infraestructura habitacional de interés social con altos estándares de calidad técnica y calidez humana.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-los-angeles-i-y-ii-etapa-cartago-v-(6).jpeg" alt="Urbanización Los Ángeles I y II Etapa (Foto 6)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización Los Ángeles I y II Etapa (Foto 6)</h3>
+                        <p class="project-desc">Espacio residencial consolidado que representa el compromiso histórico de VITRA con la vivienda digna.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-el-divino-nino-(78-familias-beneficiadas)-cartago.jpeg" alt="Urbanización El Divino Niño (78 Familias Beneficiadas)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización El Divino Niño (78 Familias Beneficiadas)</h3>
+                        <p class="project-desc">Desarrollo habitacional prioritario que transformó la vida de 78 familias de Cartago, brindándoles techo propio y estabilidad.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-users"></i> 78 Familias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-el-jardin-cartago.jpeg" alt="Urbanización El Jardín (Cartago)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización El Jardín (Cartago)</h3>
+                        <p class="project-desc">Proyecto de vivienda de interés social desarrollado en Cartago con enfoque en comunidad, salubridad y espacio familiar.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Caicedonia, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-maria-mercedes-(caicedonia-v.).jpeg" alt="Urbanización María Mercedes (Caicedonia)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización María Mercedes (Caicedonia)</h3>
+                        <p class="project-desc">Construcción de soluciones habitacionales en el municipio de Caicedonia en alianza con entidades de cooperación.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Caicedonia, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Caicedonia, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/urbanizacion-pinedo-ocampo-(caicedonia-v.).jpeg" alt="Urbanización Pinedo Ocampo (Caicedonia)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Urbanización Pinedo Ocampo (Caicedonia)</h3>
+                        <p class="project-desc">Desarrollo de vivienda social y mejoramiento del entorno residencial en Caicedonia, Valle del Cauca.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Caicedonia, Valle del Cauca</span>
+                            <span><i class="fas fa-home"></i> Vivienda Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Norte del Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/mejoramientos-de-vivienda-en-la-union-la-victoria-y-zarzal-(1).jpeg" alt="Mejoramientos de Vivienda en La Unión, La Victoria y Zarzal (1)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Mejoramientos de Vivienda en La Unión, La Victoria y Zarzal (1)</h3>
+                        <p class="project-desc">Intervenciones técnicas de adecuación habitacional, saneamiento básico, refuerzo de techos y pisos en municipios del Norte del Valle.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Norte del Valle del Cauca</span>
+                            <span><i class="fas fa-tools"></i> Mejoramiento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Norte del Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/mejoramientos-de-vivienda-en-la-union-la-victoria-y-zarzal-(2).jpeg" alt="Mejoramientos de Vivienda en La Unión, La Victoria y Zarzal (2)" class="project-img" loading="lazy">
+                        <span class="project-badge">Vivienda</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Mejoramientos de Vivienda en La Unión, La Victoria y Zarzal (2)</h3>
+                        <p class="project-desc">Obras de optimización física de hogares para reducir el déficit cualitativo de vivienda en zonas vulnerables.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Norte del Valle del Cauca</span>
+                            <span><i class="fas fa-tools"></i> Mejoramiento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="vivienda" data-location="Cartago y Norte del Valle">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/reconstrucciones.png" alt="Campaña de Reconstrucción de Hogares tras Sismos" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: #c62828;">Emergencia</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Campaña de Reconstrucción de Hogares tras Sismos</h3>
+                        <p class="project-desc">Diagnóstico estructural, apoyo humanitario y obras de reconstrucción de techos y viviendas afectadas por terremotos en Cartago y Norte del Valle.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago y Norte del Valle</span>
+                            <span><i class="fas fa-heart"></i> Campaña Activa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Guadalajara de Buga, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-ita-guadalajara-de-buga-(1).jpeg" alt="I.E. ITA Guadalajara de Buga (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. ITA Guadalajara de Buga (Foto 1)</h3>
+                        <p class="project-desc">Mejoramiento de infraestructura educativa en el Instituto Técnico Agrícola de Buga, optimizando aulas y bienestar estudiantil.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guadalajara de Buga, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Guadalajara de Buga, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-ita-guadalajara-de-buga-(2).jpeg" alt="I.E. ITA Guadalajara de Buga (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. ITA Guadalajara de Buga (Foto 2)</h3>
+                        <p class="project-desc">Adecuación de áreas pedagógicas y pasillos institucionales para la comunidad educativa de Buga.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guadalajara de Buga, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Bugalagrande, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-diego-rengifo-salazar-sede-augusto-ricaurte-(buga-la-grande)-(1).jpeg" alt="I.E. Diego Rengifo Salazar - Sede Augusto Ricaurte (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Diego Rengifo Salazar - Sede Augusto Ricaurte (Foto 1)</h3>
+                        <p class="project-desc">Obras de adecuación física y mejoramiento en la sede Augusto Ricaurte del municipio de Bugalagrande.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bugalagrande, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Bugalagrande, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-diego-rengifo-salazar-sede-augusto-ricaurte-(buga-la-grande)-(2).jpeg" alt="I.E. Diego Rengifo Salazar - Sede Augusto Ricaurte (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Diego Rengifo Salazar - Sede Augusto Ricaurte (Foto 2)</h3>
+                        <p class="project-desc">Modernización de espacios escolares para brindar mejores condiciones de aprendizaje a niños y jóvenes.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bugalagrande, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="La Cumbre, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-san-pio-x-(la-cumbre)-(1).jpeg" alt="I.E. San Pío X (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. San Pío X (Foto 1)</h3>
+                        <p class="project-desc">Intervención locativa y adecuación de aulas en la Institución Educativa San Pío X del municipio de La Cumbre.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> La Cumbre, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="La Cumbre, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-san-pio-x-(la-cumbre)-(2).jpeg" alt="I.E. San Pío X (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. San Pío X (Foto 2)</h3>
+                        <p class="project-desc">Mantenimiento estructural y mejoramiento de las condiciones de seguridad en las instalaciones escolares.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> La Cumbre, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-holguin-garces-(cartago)-(1).jpeg" alt="I.E. Holguín Garcés (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Holguín Garcés (Foto 1)</h3>
+                        <p class="project-desc">Adecuación de aulas y baterías sanitarias en la Institución Educativa Holguín Garcés de Cartago.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-holguin-garces-(cartago)-(2).jpeg" alt="I.E. Holguín Garcés (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Holguín Garcés (Foto 2)</h3>
+                        <p class="project-desc">Obras de mantenimiento locativo que benefician a cientos de estudiantes de la comunidad cartagüeña.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-indalecio-penilla-sede-instituto-tecnico-(cartago)-(1).jpeg" alt="I.E. Indalecio Penilla - Sede Instituto Técnico (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Indalecio Penilla - Sede Instituto Técnico (Foto 1)</h3>
+                        <p class="project-desc">Obras de mejoramiento en talleres y aulas de la sede técnica del emblemático colegio Indalecio Penilla de Cartago.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-indalecio-penilla-sede-instituto-tecnico-(cartago)-(2).jpeg" alt="I.E. Indalecio Penilla - Sede Instituto Técnico (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Indalecio Penilla - Sede Instituto Técnico (Foto 2)</h3>
+                        <p class="project-desc">Adecuación estructural y mantenimiento en los ambientes formativos de la institución técnica.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-indalecio-penilla-sede-antono-narino-(cartago)-(1).jpeg" alt="I.E. Indalecio Penilla - Sede Antonio Nariño (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Indalecio Penilla - Sede Antonio Nariño (Foto 1)</h3>
+                        <p class="project-desc">Rehabilitación de salones de clase y espacios recreativos en la sede Antonio Nariño de Cartago.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-indalecio-penilla-sede-antono-narino-(cartago)-(2).jpeg" alt="I.E. Indalecio Penilla - Sede Antonio Nariño (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Indalecio Penilla - Sede Antonio Nariño (Foto 2)</h3>
+                        <p class="project-desc">Mejoramiento de las condiciones de salubridad y confort térmico en ambientes de aprendizaje.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Calima El Darién, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-gimnasio-del-calima-(calima)-(1).jpeg" alt="I.E. Gimnasio del Calima (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Gimnasio del Calima (Foto 1)</h3>
+                        <p class="project-desc">Intervención en infraestructura escolar para la comunidad de Calima El Darién, Valle del Cauca.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Calima El Darién, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Calima El Darién, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-gimnasio-del-calima-(calima)-(2).jpeg" alt="I.E. Gimnasio del Calima (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Gimnasio del Calima (Foto 2)</h3>
+                        <p class="project-desc">Adecuación de áreas formativas y mantenimiento general de cubiertas y muros escolares.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Calima El Darién, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Bolívar, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-el-naranjal-(bolivar)-(1).jpeg" alt="I.E. El Naranjal (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. El Naranjal (Foto 1)</h3>
+                        <p class="project-desc">Mejoramiento de infraestructura en escuela rural del municipio de Bolívar, Valle.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bolívar, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Bolívar, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-el-naranjal-(bolivar)-(2).jpeg" alt="I.E. El Naranjal (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. El Naranjal (Foto 2)</h3>
+                        <p class="project-desc">Adecuaciones locativas para brindar un espacio digno y seguro a los niños del sector campesino.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bolívar, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Guacarí, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-pedro-vicente-abadia-sede-augusto-dominguez-(guacari)-(1).jpeg" alt="I.E. Pedro Vicente Abadía - Sede Augusto Domínguez (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Pedro Vicente Abadía - Sede Augusto Domínguez (Foto 1)</h3>
+                        <p class="project-desc">Construcción y mejoramiento de instalaciones físicas en la sede Augusto Domínguez de Guacarí.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guacarí, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Guacarí, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-pedro-vicente-abadia-sede-augusto-dominguez-(guacari)-(2).jpeg" alt="I.E. Pedro Vicente Abadía - Sede Augusto Domínguez (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Pedro Vicente Abadía - Sede Augusto Domínguez (Foto 2)</h3>
+                        <p class="project-desc">Adecuación de aulas y servicios esenciales para la formación de los estudiantes de Guacarí.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guacarí, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Guacarí, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-simon-bolivar-sede-manuela-beltran-(guacari)-(1).jpeg" alt="I.E. Simón Bolívar - Sede Manuela Beltrán (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Simón Bolívar - Sede Manuela Beltrán (Foto 1)</h3>
+                        <p class="project-desc">Mantenimiento y mejoramiento locativo en la sede Manuela Beltrán del municipio de Guacarí.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guacarí, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Guacarí, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-simon-bolivar-sede-manuela-beltran-(guacari)-(2).jpeg" alt="I.E. Simón Bolívar - Sede Manuela Beltrán (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Simón Bolívar - Sede Manuela Beltrán (Foto 2)</h3>
+                        <p class="project-desc">Renovación de espacios escolares para garantizar el derecho a una educación en condiciones dignas.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guacarí, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Jamundí, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-luis-carlos-valencia-sede-principal-(jamundi)-(1).jpeg" alt="I.E. Luis Carlos Valencia - Sede Principal (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Luis Carlos Valencia - Sede Principal (Foto 1)</h3>
+                        <p class="project-desc">Optimización de infraestructura institucional en la sede principal del municipio de Jamundí.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Jamundí, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Jamundí, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-luis-carlos-valencia-sede-principal-(jamundi)-(2).jpeg" alt="I.E. Luis Carlos Valencia - Sede Principal (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Luis Carlos Valencia - Sede Principal (Foto 2)</h3>
+                        <p class="project-desc">Obras de adecuación en baterías sanitarias y espacios de bienestar estudiantil en Jamundí.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Jamundí, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Vijes, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-jorge-robledo-sede-policarpa-salavarrieta-(vijes)-(1).jpeg" alt="I.E. Jorge Robledo - Sede Policarpa Salavarrieta (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Jorge Robledo - Sede Policarpa Salavarrieta (Foto 1)</h3>
+                        <p class="project-desc">Intervenciones de mejoramiento de cubiertas y espacios de formación en el municipio de Vijes, Valle.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Vijes, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Vijes, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-jorge-robledo-sede-policarpa-salavarrieta-(vijes)-(2).jpeg" alt="I.E. Jorge Robledo - Sede Policarpa Salavarrieta (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Jorge Robledo - Sede Policarpa Salavarrieta (Foto 2)</h3>
+                        <p class="project-desc">Adecuación integral de aulas pedagógicas en la sede Policarpa Salavarrieta de Vijes.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Vijes, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Toro, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-fray-jose-joaquin-escobar-(toro)-(1).jpeg" alt="I.E. Fray José Joaquín Escobar (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Fray José Joaquín Escobar (Foto 1)</h3>
+                        <p class="project-desc">Adecuaciones de infraestructura y bienestar para la comunidad estudiantil de Toro, Valle del Cauca.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Toro, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Toro, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-fray-jose-joaquin-escobar-(toro)-(2).jpeg" alt="I.E. Fray José Joaquín Escobar (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Fray José Joaquín Escobar (Foto 2)</h3>
+                        <p class="project-desc">Obras de embellecimiento y mantenimiento estructural en los salones y pasillos del plantel en Toro.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Toro, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Trujillo, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-cristobal-colon-sede-venecia-(trujillo)-(1).jpeg" alt="I.E. Cristóbal Colón - Sede Venecia (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Cristóbal Colón - Sede Venecia (Foto 1)</h3>
+                        <p class="project-desc">Mejoramiento de ambientes escolares y seguridad física en la sede rural Venecia de Trujillo, Valle.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Trujillo, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Trujillo, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-cristobal-colon-sede-venecia-(trujillo)-(2).jpeg" alt="I.E. Cristóbal Colón - Sede Venecia (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Cristóbal Colón - Sede Venecia (Foto 2)</h3>
+                        <p class="project-desc">Renovación de espacios escolares para optimizar el proceso formativo en zonas campesinas.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Trujillo, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Riofrío, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-primitivo-crespo-(rio-frio)-(1).jpeg" alt="I.E. Primitivo Crespo (Foto 1)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Primitivo Crespo (Foto 1)</h3>
+                        <p class="project-desc">Obras de adecuación física y embellecimiento en la Institución Educativa Primitivo Crespo de Riofrío.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Riofrío, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="educacion" data-location="Riofrío, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/i.e.-primitivo-crespo-(rio-frio)-(2).jpeg" alt="I.E. Primitivo Crespo (Foto 2)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary-dark);">Educación</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">I.E. Primitivo Crespo (Foto 2)</h3>
+                        <p class="project-desc">Intervenciones de mantenimiento preventivo y optimización de espacios escolares en Riofrío.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Riofrío, Valle del Cauca</span>
+                            <span><i class="fas fa-school"></i> Infraestructura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="emprendimiento" data-location="Cartago y Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/emprendimiento-y-desarrollo-comunitario.png" alt="Microcréditos y Asesoría a Microempresarios" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-secondary-dark);">Microcrédito</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Microcréditos y Asesoría a Microempresarios</h3>
+                        <p class="project-desc">Programas de financiación solidaria y fomento del empleo para dinamizar la economía local y fortalecer pequeños negocios.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago y Valle del Cauca</span>
+                            <span><i class="fas fa-hand-holding-usd"></i> Microempresas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="emprendimiento" data-location="Cartago y Norte del Valle">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/emprendimiento-y-desarrollo-comunitario-vitra-(1).png" alt="Capacitación y Apoyo a Unidades Productivas" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-secondary-dark);">Emprendimiento</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Capacitación y Apoyo a Unidades Productivas</h3>
+                        <p class="project-desc">Talleres de formación técnica, formulación de proyectos y comercialización para familias emprendedoras.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago y Norte del Valle</span>
+                            <span><i class="fas fa-users-cog"></i> Formación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="emprendimiento" data-location="Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/emprendimiento-y-desarrollo-comunitario-vitra-(2).png" alt="Asociatividad y Economía Solidaria" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-secondary-dark);">Asociatividad</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Asociatividad y Economía Solidaria</h3>
+                        <p class="project-desc">Acompañamiento a redes de comercio popular y fortalecimiento del cooperativismo en sectores vulnerables.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Valle del Cauca</span>
+                            <span><i class="fas fa-handshake"></i> Comercio Justo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="comunitario" data-location="Cartago y Región">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/desarrollo-comunitario-vitra.png" alt="Fortalecimiento Comunitario y Solidaridad" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-blue);">Comunitario</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Fortalecimiento Comunitario y Solidaridad</h3>
+                        <p class="project-desc">Programas de apoyo social, acompañamiento a familias y adultos mayores, y articulación comunitaria.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago y Región</span>
+                            <span><i class="fas fa-hands-helping"></i> Tejido Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="comunitario" data-location="Norte del Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/destacado-pagina-vitra.jpeg" alt="Hábitat Solidario y Acción en Territorio" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-primary);">Territorio</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Hábitat Solidario y Acción en Territorio</h3>
+                        <p class="project-desc">Jornadas integrales de apoyo y gestión con las familias beneficiarias de los programas de la Fundación VITRA.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Norte del Valle del Cauca</span>
+                            <span><i class="fas fa-users"></i> Presencia Local</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="comunitario" data-location="Cartago, Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/galeria/monsenor-jairo-uribe-jaramillo.png" alt="Monseñor Jairo Uribe Jaramillo (Legado Fundacional)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-secondary);">Fundador</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Monseñor Jairo Uribe Jaramillo (Legado Fundacional)</h3>
+                        <p class="project-desc">Homenaje a nuestro fundador visionario, quien en 1990 inició en Cartago la misión de brindar vivienda y trabajo digno a los más necesitados.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cartago, Valle del Cauca</span>
+                            <span><i class="fas fa-award"></i> Fundador 1990</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="inclusion" data-location="Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/project-inclusion.png" alt="Formación Inclusiva en Lengua de Señas (LSC)" class="project-img" loading="lazy">
+                        <span class="project-badge" style="background-color: var(--color-blue);">Inclusión</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Formación Inclusiva en Lengua de Señas (LSC)</h3>
+                        <p class="project-desc">Talleres formales e interactivos de Lengua de Señas Colombiana en convenio con asociaciones de PCD con reconocimiento nacional.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Valle del Cauca</span>
+                            <span><i class="fas fa-sign-language"></i> Diversidad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="turismo-ambiente" data-location="Norte del Valle del Cauca">
+                    <div class="project-img-container">
+                        <img src="./assets/images/project-turismo.png" alt="Senderos y Rutas Bioculturales" class="project-img" loading="lazy">
                         <span class="project-badge" style="background-color: var(--color-secondary);">Turismo</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Senderos y Rutas Bioculturales</h3>
-                        <p class="project-desc">Diseño, señalética interpretativa y capacitación comunitaria para una ruta turística de bajo impacto ambiental y alto rescate histórico en Cartago, activando la economía artesanal popular.</p>
+                        <p class="project-desc">Diseño, señalética interpretativa y capacitación comunitaria para rutas turísticas y patrimoniales que activan la economía local.</p>
                         <div class="project-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Norte del Valle</span>
-                            <span><i class="fas fa-route"></i> 1,500 Visitantes/año</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Norte del Valle del Cauca</span>
+                            <span><i class="fas fa-route"></i> Patrimonio</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Proyecto 3: Inclusión -->
-                <div class="project-card" data-category="inclusion">
+                <div class="project-card" data-category="turismo-ambiente" data-location="Cartago Rural">
                     <div class="project-img-container">
-                        <img src="./assets/images/project-inclusion.png" alt="Capacitación Lengua de Señas" class="project-img">
-                        <span class="project-badge" style="background-color: var(--color-blue);">Inclusión</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Formación Inclusiva LSC</h3>
-                        <p class="project-desc">Talleres formales e interactivos de Lengua de Señas Colombiana (LSC) y accesibilidad lingüística en instituciones públicas y guías turísticos locales para la inclusión real de la población sorda. Formación sobre el manejo y orientación a la diversidad funcional y cursos de lengua de señas en convenio con asociaciones de PCD con reconocimiento y validez a nivel nacional.</p>
-                        <div class="project-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Cobertura Departamental</span>
-                            <span><i class="fas fa-graduation-cap"></i> 120 Líderes</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 4: Sostenibilidad -->
-                <div class="project-card" data-category="sostenibilidad">
-                    <div class="project-img-container">
-                        <img src="./assets/images/project-sostenibilidad.png" alt="Huertas Agroecológicas Sostenibles" class="project-img">
+                        <img src="./assets/images/project-sostenibilidad.png" alt="Hábitat Agroecológico Familiar y Huertas" class="project-img" loading="lazy">
                         <span class="project-badge" style="background-color: var(--color-green);">Sostenibilidad</span>
+                        <div class="project-zoom-overlay"><i class="fas fa-search-plus"></i></div>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">Hábitat Agroecológico Familiar</h3>
-                        <p class="project-desc">Implementación de huertas orgánicas e infraestructura técnica descentralizada para la captación de agua pluvial y riego solar en la zona rural de Cartago, reduciendo la vulnerabilidad alimentaria.</p>
+                        <h3 class="project-title">Hábitat Agroecológico Familiar y Huertas</h3>
+                        <p class="project-desc">Huertas orgánicas familiares, cosecha de aguas pluviales y seguridad alimentaria para comunidades campesinas.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-map-marker-alt"></i> Cartago Rural</span>
-                            <span><i class="fas fa-seedling"></i> 80 Familias</span>
+                            <span><i class="fas fa-seedling"></i> Agroecología</span>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
+
+    <!-- Modal Lightbox para visualización ampliada de proyectos -->
+    <div id="project-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visor de proyecto">
+        <div class="lightbox-content">
+            <button id="lightbox-close" class="lightbox-close" aria-label="Cerrar visor">&times;</button>
+            <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Proyecto anterior"><i class="fas fa-chevron-left"></i></button>
+            <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Proyecto siguiente"><i class="fas fa-chevron-right"></i></button>
+            
+            <div class="lightbox-img-box">
+                <img id="lightbox-img" src="" alt="Vista previa de proyecto">
+            </div>
+            
+            <div class="lightbox-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                    <span id="lightbox-category" class="project-badge" style="position: static; margin-bottom: 0;">Categoría</span>
+                    <span id="lightbox-counter" style="font-size: 0.85rem; color: var(--color-text-muted); font-weight: 700;">1 / 50</span>
+                </div>
+                <h3 id="lightbox-title" style="font-size: 1.4rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">Título del Proyecto</h3>
+                <div id="lightbox-location" style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+                    <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i> Ubicación
+                </div>
+                <p id="lightbox-desc" style="color: var(--color-text-main); font-size: 1rem; line-height: 1.7; margin-bottom: 0;">
+                    Descripción detallada del proyecto y resultados obtenidos.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de Página -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-column footer-about">
-                <h3>Fundación Vitra</h3>
-                <p>Más de 25 años construyendo procesos de esperanza e inclusión en comunidades rurales y urbanas de Colombia.</p>
+                <h3>Fundación VITRA</h3>
+                <p>Fundación Vivienda y Trabajo Lucrecia Jaramillo de Uribe. Fundada en 1990 en Cartago, Valle del Cauca. Transformando vidas a través de la vivienda, el trabajo y el desarrollo social.</p>
                 <div class="footer-socials">
-                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/fundacion_vitra" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram Fundación VITRA"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573188216112" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:fundacionvitra@yahoo.com" class="social-icon" aria-label="Correo electrónico"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-column">
@@ -199,16 +886,17 @@
                     <li><a href="nosotros.html" class="footer-link-item">Nosotros</a></li>
                     <li><a href="lineas-accion.html" class="footer-link-item">Líneas de Acción</a></li>
                     <li><a href="proyectos.html" class="footer-link-item">Proyectos</a></li>
-                    <li><a href="contacto.html" class="footer-link-item">Contacto</a></li>
+                    <li><a href="contacto.html" class="footer-link-item">Contacto y Donaciones</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Líneas de Acción</h3>
                 <ul class="footer-links">
-                    <li><a href="lineas-accion.html" class="footer-link-item">Construcción e Infraestructura</a></li>
-                    <li><a href="lineas-accion.html" class="footer-link-item">Inclusión social y enfoque diferencial hacia la diversidad funcional (discapacidad)</a></li>
-                    <li><a href="lineas-accion.html" class="footer-link-item">Turismo Sostenible y Cultural</a></li>
-                    <li><a href="lineas-accion.html" class="footer-link-item">Educación y Fortalecimiento</a></li>
+                    <li><a href="lineas-accion.html#construccion" class="footer-link-item">Vivienda e Infraestructura</a></li>
+                    <li><a href="lineas-accion.html#educacion" class="footer-link-item">Infraestructura Educativa</a></li>
+                    <li><a href="lineas-accion.html#emprendimiento" class="footer-link-item">Microcrédito y Emprendimiento</a></li>
+                    <li><a href="lineas-accion.html#inclusion" class="footer-link-item">Inclusión Social y Lengua de Señas</a></li>
+                    <li><a href="lineas-accion.html#turismo" class="footer-link-item">Turismo Sostenible y Cultura</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -216,7 +904,7 @@
                 <ul class="footer-contact-list">
                     <li class="footer-contact-item">
                         <i class="fas fa-map-marker-alt footer-contact-icon"></i>
-                        <span>Calle 15 No. 3N-30, Barrio El Prado, Cartago, Valle del Cauca</span>
+                        <span>Calle 15 No. 3N-30, Barrio El Prado, Cartago, Valle del Cauca, Colombia</span>
                     </li>
                     <li class="footer-contact-item">
                         <i class="fas fa-phone footer-contact-icon"></i>
@@ -226,40 +914,21 @@
                         <i class="fas fa-envelope footer-contact-icon"></i>
                         <span>fundacionvitra@yahoo.com</span>
                     </li>
+                    <li class="footer-contact-item">
+                        <i class="fab fa-instagram footer-contact-icon"></i>
+                        <span>@fundacion_vitra</span>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="container footer-bottom">
             <p>&copy; 2026 Fundación Vivienda y Trabajo Lucrecia Jaramillo de Uribe - VITRA. Todos los derechos reservados.</p>
-            <p>Nit: 821001150-1 | Personería Jurídica desde 1997</p>
+            <p>NIT: 800246973-1 | Fundada en 1990 en Cartago, Valle del Cauca</p>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/proyectos.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-            if (navToggle && navMenu) {
-                navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
-            }
-
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const projectCards = document.querySelectorAll('.project-card');
-            filterButtons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    filterButtons.forEach((btn) => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    const filterValue = button.getAttribute('data-filter');
-                    projectCards.forEach((card) => {
-                        const cardCategory = card.getAttribute('data-category');
-                        card.style.display = filterValue === 'all' || cardCategory === filterValue ? 'flex' : 'none';
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>

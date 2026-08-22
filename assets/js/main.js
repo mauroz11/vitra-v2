@@ -112,4 +112,53 @@ document.addEventListener('DOMContentLoaded', () => {
         // Intervalo de 5 segundos
         setInterval(nextSlide, 5000);
     }
+
+    // 6. Copiar datos bancarios con Toast flotante
+    const copyButtons = document.querySelectorAll('[data-copy]');
+    copyButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const textToCopy = btn.getAttribute('data-copy');
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showToast('¡Datos copiados al portapapeles!');
+                }).catch(() => {
+                    fallbackCopyText(textToCopy);
+                });
+            } else {
+                fallbackCopyText(textToCopy);
+            }
+        });
+    });
+
+    function fallbackCopyText(text) {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = text;
+        tempInput.style.position = 'fixed';
+        tempInput.style.left = '-9999px';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+            document.execCommand('copy');
+            showToast('¡Datos copiados al portapapeles!');
+        } catch (err) {
+            prompt('Copia estos datos manualmente:', text);
+        }
+        document.body.removeChild(tempInput);
+    }
+
+    function showToast(message) {
+        let toast = document.querySelector('.toast-msg');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.className = 'toast-msg';
+            toast.innerHTML = '<i class="fas fa-check-circle" style="color: var(--color-secondary);"></i> <span></span>';
+            document.body.appendChild(toast);
+        }
+        toast.querySelector('span').textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3200);
+    }
 });
